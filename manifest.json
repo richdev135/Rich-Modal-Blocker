@@ -1,0 +1,15 @@
+{
+  "manifest_version": 1,
+
+  "name": "Rich Modal Blocker",
+  "description": "This extension will block those annoying modal popups",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "rmb.jpg",
+   "default_popup": "rmb.html"
+  },
+  "permissions": [
+   "activeTab"
+   ]
+}
