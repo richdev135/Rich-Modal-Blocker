@@ -5,9 +5,12 @@ $(document).ready(function(){
   $("#testbtn").on("click", function(){
     $("#heading").html("Testing 444");
 
-    $("body").html("hello");
+  chrome.tabs.executeScript(null,{file:"scripts.js"});
   });
 
+  function doit() {
+    $("body").html("hello");
+  }
 
 });
 
