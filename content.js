@@ -1,17 +1,11 @@
 
 $(document).ready(function(){
-  $("#heading").html("Testing 3");
 
   $("#testbtn").on("click", function(){
-    $("#heading").html("Testing 444");
-
-  chrome.tabs.executeScript(null,{file:"scripts.js"});
+    $("#heading").html("After click");
   });
-
-  function doit() {
-    $("body").html("hello");
-  }
-
 });
+
+
 
 

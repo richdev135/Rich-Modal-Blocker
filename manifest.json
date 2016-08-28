@@ -1,24 +1,18 @@
 {
   "manifest_version": 2,
 
-  "name": "Modify CSS and HTML",
-  "version": "0.1.1",
-  "description": "Lateral blog post demo extension",
+  "name": "Rich Modal Dialog Blocker",
+  "version": "0.1.0",
+  "description": "Rich Modal Dialog Blocker",
   "browser_action": {
-    "default-icon" : "rmb.png",
+    "default_icon" : "rmb.png",
     "default_popup": "main.html"
-},
+  },
   "permissions": [
         "tabs",
         "notifications",
         "http://*/",
         "https://*/"
-    ],
-  "content_scripts": [{
-    "css": ["styles.css"],
-    "js": ["jquery2.2.4.js", "content.js"],
-    "matches": ["*://*/*"]
-  }],
-  "web_accessible_resources": ["scripts.js"]
+    ]
 
 }
