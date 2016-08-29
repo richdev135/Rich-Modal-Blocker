@@ -13,6 +13,10 @@
         "notifications",
         "http://*/",
         "https://*/"
-    ]
+    ],
+    "content_scripts": [{
+    "js": ["jquery2.2.4.js", "content.js"],
+    "matches": ["*://*/*"]
+  }]
 
 }
